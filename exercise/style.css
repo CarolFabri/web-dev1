@@ -1,19 +1,29 @@
-body { 
-    margin: 0; /* Remove the default margin */
+body {
+    margin: 0;
+    /* Remove the default margin */
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(142, 100, 10, 1) 100%);
 }
 
-#image-row { 
+#image-row {
     /* Use flexbox to arrange the images in a row */
     display: flex;
     justify-content: center;
     padding: 20px;
     gap: 40px;
+    filter: blur(50px);
+    filter: contrast(500%);
+
+
 }
 
-img { 
+img {
     /* Prevent images from exceeding the width of their parent */
     max-width: 100%;
     height: auto;
+    
+
+    
 }
 
 #click-me {

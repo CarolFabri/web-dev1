@@ -11,8 +11,7 @@ body {
     justify-content: center;
     padding: 20px;
     gap: 40px;
-    filter: blur(50px);
-    filter: contrast(500%);
+    
 
 
 }
@@ -24,6 +23,34 @@ img {
     
 
     
+}
+img: hover {
+    background-color: red;
+  }
+
+#img-A{
+    filter: blur(50px);
+    filter: contrast(0%);
+    /*filter: saturate(300%);*/
+    
+    filter: drop-shadow(25px 50px 10px rgb(215, 128, 14));
+
+}
+
+#img-B {
+    filter: contrast(50%);
+    button {
+        background-color: dodgerblue;
+      }
+       
+      button:hover {
+        background-color: red;
+      }
+
+}
+
+#img-C{
+    filter: brightness(2);
 }
 
 #click-me {
@@ -39,4 +66,13 @@ img {
 
     font-size: 2em;
     font-weight: bold;
+}
+.hover{
+    button {
+        background-color: dodgerblue;
+      }
+       
+      button:hover {
+        background-color: red;
+      }
 }
